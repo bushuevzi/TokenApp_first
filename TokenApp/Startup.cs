@@ -35,7 +35,7 @@ namespace TokenApp
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
-                    options.RequireHttpsMetadata = false; // НА БОЮ ВКЛЮЧАТЬ!!!
+                    options.RequireHttpsMetadata = true; // НА БОЮ ВКЛЮЧАТЬ!!!
                     options.TokenValidationParameters = new TokenValidationParameters
                     {
                         //будем ли проверять издателя токена
